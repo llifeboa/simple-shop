@@ -1,0 +1,28 @@
+{
+	"plugins": [
+		"stylelint-selector-bem-pattern"
+	],
+	"extends": "stylelint-config-recommended-scss",
+	"rules": {
+		"block-opening-brace-newline-after": ["always"],
+		"block-closing-brace-newline-before": ["always"],
+		"indentation": ["tab", {"baseIndentLevel": 0}],
+		"selector-combinator-space-after": "always",
+		"declaration-colon-space-after": "always",
+		"block-opening-brace-space-before": "always",
+		"rule-empty-line-before": "always",
+		"color-hex-case": "upper",
+		"max-empty-lines": 2,
+		"selector-class-pattern": "^(([a-z]+(-?_{0,2}[a-z])?)+)$",
+		"selector-max-id": 0,
+		"selector-max-type": 0,
+		"plugin/selector-bem-pattern": {
+				"componentName": "[A-Z]+",
+				"componentSelectors": {
+					"initial": "^\\.{componentName}(?:-[a-z]+)?$",
+					"combined": "^\\.combined-{componentName}-[a-z]+$"
+				},
+				"utilitySelectors": "^\\.util-[a-z]+$"
+		}
+	}
+}
