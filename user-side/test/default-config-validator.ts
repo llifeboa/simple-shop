@@ -8,10 +8,13 @@ test('One config props awailable', t => {
 		port: '8080',
 	};
 
-	const validator = new DefaultConfigValidator(['host']);
-	const filtredConfig = validator.validateConfig(config);
-
-	t.deepEqual(filtredConfig, { host: '127.0.0.1' }, 'Should be eqaul');
+	try {
+		const validator = new DefaultConfigValidator(['host']);
+		validator.verificationConifg(config);
+		t.fail('Validator shouls throw error if pass not allowed config prop');
+	} catch (err) {
+		t.pass();
+	}
 });
 
 test('Multiply config props awailbale', t => {
@@ -21,16 +24,15 @@ test('Multiply config props awailbale', t => {
 	};
 
 	const validator = new DefaultConfigValidator(['host', 'port']);
-	const filtredConfig = validator.validateConfig(config);
-
-	t.deepEqual(filtredConfig, config, 'Should be eqaul');
+	validator.verificationConifg(config);
+	t.pass();
 });
 
 test('Empty config filtering', t => {
 	const config = {};
 
 	const validator = new DefaultConfigValidator(['host', 'port']);
-	const filtredConfig = validator.validateConfig(config);
+	validator.verificationConifg(config);
 
-	t.deepEqual(filtredConfig, {}, 'Should be eqaul');
+	t.pass();
 });

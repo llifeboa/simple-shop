@@ -9,8 +9,9 @@
     "start:debug": "node --inspect-brk dist/server.js",
     "stop:dev": "pm2 delete all",
     "lint": "npm run lint:style && npm run lint:script",
-    "lint:script": "eslint --ext .js,.ts,.vue ./build/** ./src/**  --fix",
-    "lint:style": "stylelint ./src/frontend",
+    "lint:script": "eslint --ext .js,.ts,.vue ./build/** ./src/** --fix",
+    "lint:style": "stylelint ./src/frontend --fix",
+    "lint:ci": "eslint --ext .js,.ts,.vue ./build/** ./src/** && stylelint ./src/frontend",
     "build": "webpack --config ./build/backend",
     "log": "tail -f ./log/server.log | pino-pretty",
     "test": "ava"
