@@ -1,3 +1,8 @@
 <template>
-	<h1>This is About</h1>
+	<div class="s">
+		wew
+	</div>
 </template>
+<style>
+
+</style>
