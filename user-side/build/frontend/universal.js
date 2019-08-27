@@ -60,7 +60,7 @@ module.exports = {
 				loader: 'pug-plain-loader',
 			},
 			{
-				test: /\.(png|jp?eg|gif|svg|woff|woff2|eot|ttf|webp|json)$/,
+				test: /\.(png|jpe?g|gif|svg|woff|woff2|eot|ttf|webp|json)$/,
 				loader: 'file-loader',
 				options: {
 					name: '[name].[ext]',
