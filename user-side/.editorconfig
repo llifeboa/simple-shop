@@ -1,5 +1,5 @@
 [*]
-    tab_width = 4
+    tab_width = 2
     indent_style = tab
 [*.{yml,yaml,json}]
 	indent_style = space
