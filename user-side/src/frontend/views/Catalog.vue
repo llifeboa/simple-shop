@@ -20,5 +20,3 @@ import Products from '../components/catalog/products/Products.vue';
 })
 export default class Catalog extends Vue {}
 </script>
-
-<style></style>

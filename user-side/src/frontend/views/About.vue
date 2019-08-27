@@ -3,6 +3,3 @@
 		wew
 	</div>
 </template>
-<style>
-
-</style>
