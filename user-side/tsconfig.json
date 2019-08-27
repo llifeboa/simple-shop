@@ -66,4 +66,9 @@
     "src/**/*.vue",
     "src/**/*.ts"
   ],
+  "baseUrl": ".",
+  "paths": {
+    "@b/*": ["src/backend/*"],
+    "@f/*": ["src/frontend/*"]
+  }
 }

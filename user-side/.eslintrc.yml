@@ -23,10 +23,17 @@ plugins:
   - 'import'
   - '@typescript-eslint'
 settings:
-  "import/parsers":
+  import/ignore:
+    - node_modules
+  import/parsers:
     "@typescript-eslint/parser": [ .ts, .tsx ]
+  import/resolver:
+    webpack:
+      config: './build/index.js'
+      index: 0
 rules:
   "no-console": "warn"
+  "camelcase": "error"
   "quotes": 
     - "error"
     - "single"
