@@ -1,8 +1,10 @@
 <template>
 	<div class="page-nav">
 		<div class="page-nav__page-select-wrapper">
-			<span class="page-nav__page-select-value">{{ select_value }}</span>
-			<select v-model="select_value" class="page-nav__page-select">
+			<span class="page-nav__page-select-value">{{
+				this.selectValue
+			}}</span>
+			<select v-model="this.selectValue" class="page-nav__page-select">
 				<option selected value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -16,10 +18,14 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 @Component
 export default class PageNavigation extends Vue {
-	@Prop() private select_value = '1';
+	data() {
+		return {
+			selectValue: '1',
+		};
+	}
 }
 </script>
 
