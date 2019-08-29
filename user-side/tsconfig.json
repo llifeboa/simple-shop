@@ -57,7 +57,12 @@
 		// "inlineSourceMap": true,               /* Emit a single file with source maps instead of having a separate file. */
 		// "inlineSources": true,                 /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
 		/* Experimental Options */
-		// "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
+    // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
+    "baseUrl": ".",
+    "paths": {
+      "@b/*": ["./src/backend/*"],
+      "@f/*": ["./src/frontend/*"]
+    }
 	},
 	"exclude": [
 		"node_modules",
@@ -66,9 +71,4 @@
     "src/**/*.vue",
     "src/**/*.ts"
   ],
-  "baseUrl": ".",
-  "paths": {
-    "@b/*": ["src/backend/*"],
-    "@f/*": ["src/frontend/*"]
-  }
 }

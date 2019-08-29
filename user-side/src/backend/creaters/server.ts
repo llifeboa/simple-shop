@@ -1,6 +1,6 @@
-import Server, { Middleware } from '../server';
-import FastifyServer from '../server/fastify';
-import Render from '../render';
+import Server, { Middleware } from '@b/server';
+import FastifyServer from '@b/server/fastify';
+import Render from '@b/render';
 
 export default interface ServerCreater {
 	create(middlewares: Array<Middleware>): Server;

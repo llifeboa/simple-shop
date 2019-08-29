@@ -1,6 +1,6 @@
 import { createBundleRenderer, BundleRenderer } from 'vue-server-renderer';
 import Render from '../index';
-import { RenderResources } from './render-resources';
+import { RenderResources } from './resources';
 import Log from '../../log';
 
 export default class VueRender implements Render {

@@ -55,7 +55,7 @@ export default class Banner extends Vue {}
 	font-weight: 900;
 	font-size: 50px;
 	line-height: 61px;
-	color: #f2f2f2;
+	color: #F2F2F2;
 }
 
 .banner__image {

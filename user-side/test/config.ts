@@ -1,7 +1,7 @@
 import test from 'ava';
 
 import Config from '../src/backend/config/index';
-import ConfigEchoReader from '../src/backend/config/config-reader/config-echo-reader';
+import ConfigEchoReader from '../src/backend/config/reader/echo';
 import { mode } from '../src/backend/config/config-type';
 
 test('Read one config', t => {

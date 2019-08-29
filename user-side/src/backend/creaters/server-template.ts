@@ -1,16 +1,16 @@
 import { EventEmitter } from 'events';
 import fs from 'fs';
 
-import ServerCreater from './server-creater';
-import Config from '../config';
+import ServerCreater from './server';
+import Config from '@b/config';
 import Builder, {
 	EVENT_BUILD_DONE,
-} from '../render/vue-render/render-resources-builder/webpack-builder';
-import RenderResourcesFsReader from '../render/vue-render/render-resources-reader/fs-reader';
-import Server from '../server';
-import VueRender from '../render/vue-render';
-import Log from '../log';
-import RenderResourcesReader from '../render/vue-render/render-resources-reader';
+} from '@b/render/vue-render/resources-builder/webpack';
+import RenderResourcesFsReader from '@b/render/vue-render/resources-reader/fs';
+import Server from '@b/server';
+import VueRender from '@b/render/vue-render';
+import Log from '@b/log';
+import RenderResourcesReader from '@b/render/vue-render/resources-reader';
 
 export default interface ServerTemplateCreater {
 	create(log: Log, serverCreater: ServerCreater): Promise<Server>;

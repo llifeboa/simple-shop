@@ -1,12 +1,12 @@
 import pino from 'pino';
 
 import VueRender from './render/vue-render';
-import ConfigCreator from './creaters/config-creater';
-import ServerCreater, { FastifyServerCreater } from './creaters/server-creater';
+import ConfigCreator from './creaters/config';
+import ServerCreater, { FastifyServerCreater } from './creaters/server';
 import {
 	DevVueServerTemplateCreater,
 	VueProdServerTemplateCreater,
-} from './creaters/server-template-creater';
+} from './creaters/server-template';
 import Config from './config';
 import Server from './server';
 import { mode } from './config/config-type';

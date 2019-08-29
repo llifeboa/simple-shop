@@ -1,5 +1,5 @@
 import path from 'path';
-import ConfigReader from './config-reader';
+import ConfigReader from './reader';
 import { mode, TConfig } from './config-type';
 
 const DEFAULT_MODE = mode.development;

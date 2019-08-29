@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import DefaultConfigValidator from '../src/backend/config/config-validator/default-config-validator';
+import DefaultConfigValidator from '../src/backend/config/validator/default';
 
 test('One config props awailable', t => {
 	const config = {
