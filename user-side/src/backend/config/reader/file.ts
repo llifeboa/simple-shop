@@ -1,8 +1,8 @@
 import yaml from 'yaml';
 import ConfigReader from '.';
 import { TConfig } from '../config-type';
-import ConfigValidator from '../config-validator';
-import { FileSystem } from '../../render/vue-render/render-resources-reader/fs-reader';
+import ConfigValidator from '../validator';
+import { FileSystem } from '../../render/vue-render/resources-reader/fs';
 import Log from '../../log';
 
 export default class ConfigFileReader implements ConfigReader {

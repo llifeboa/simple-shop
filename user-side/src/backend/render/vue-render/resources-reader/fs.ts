@@ -1,5 +1,5 @@
 import RenderResourcesReader from '.';
-import { ClientManifest, ServerBundle, Template } from '../render-resources';
+import { ClientManifest, ServerBundle, Template } from '../resources';
 
 export interface FileSystem {
 	readFileSync(path: string, encoding: string): string;

@@ -5,9 +5,9 @@ import webpack from 'webpack';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
 // @ts-ignore
-import buildConfig from '../../../../../build/frontend';
-import { FileSystem } from '../render-resources-reader/fs-reader';
-import Log from '../../../log';
+import buildConfig from '@/build/frontend';
+import { FileSystem } from '../resources-reader/fs';
+import Log from '@b/log';
 
 export const EVENT_BUILD_DONE = 'BUILD_DONE';
 

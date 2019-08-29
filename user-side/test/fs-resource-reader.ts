@@ -1,7 +1,7 @@
 import test from 'ava';
 import MFS from 'memory-fs';
 
-import FsReader from '../src/backend/render/vue-render/render-resources-reader/fs-reader';
+import FsReader from '../src/backend/render/vue-render/resources-reader/fs';
 
 const clientManifestPath = '/clientManifest.json';
 const serverBundlePath = '/serverBundlePath.json';

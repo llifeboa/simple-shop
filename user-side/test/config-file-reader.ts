@@ -4,8 +4,8 @@ import MFS from 'memory-fs';
 import path from 'path';
 import yaml from 'yaml';
 
-import ConfigFileReader from '../src/backend/config/config-reader/config-file-reader';
-import AllValidLavidator from '../src/backend/config/config-validator/all-valid-validator';
+import ConfigFileReader from '../src/backend/config/reader/file';
+import AllValidLavidator from '../src/backend/config/validator/all-valid';
 import Log from '../src/backend/log';
 
 class TestLogger implements Log {
