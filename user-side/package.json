@@ -10,7 +10,7 @@
     "stop:dev": "pm2 delete all",
     "lint": "npm run lint:script -- --fix && npm run lint:style -- --fix",
     "lint:script": "eslint --ext .js,.ts,.vue ./build/** ./src/**",
-    "lint:style": "stylelint './src/frontend/**/*.vue' './src/frontend/**/*.css' './src/frontend/**/*.scss' './src/frontend/**/*.sass'",
+    "lint:style": "stylelint './src/frontend/'",
     "lint:ci": "npm run lint:script && npm run lint:style",
     "build": "webpack --config ./build",
     "build:backend": "webpack --config ./build/backend",
