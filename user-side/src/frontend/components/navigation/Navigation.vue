@@ -1,60 +1,39 @@
-<template>
-	<nav>
-		<div class="nav">
-			<div class="nav__item  nav__item_active">
-				<img
-					class="nav__item-decorate"
-					src="../../assets/img/navbar/decoration.svg"
-					alt=""
-				/>
-				<img
-					class="nav__item-image"
-					src="../../assets/img/navbar/account.svg"
-					alt=""
-				/>
-				<img
-					class="nav__item-image-active"
-					src="../../assets/img/navbar/account-active.svg"
-					alt=""
-				/>
-			</div>
-			<div class="nav__item ">
-				<img
-					class="nav__item-decorate"
-					src="../../assets/img/navbar/decoration.svg"
-					alt=""
-				/>
-				<img
-					class="nav__item-image"
-					src="../../assets/img/navbar/catalog.svg"
-					alt=""
-				/>
-				<img
-					class="nav__item-image-active"
-					src="../../assets/img/navbar/catalog-active.svg"
-					alt=""
-				/>
-			</div>
-			<div class="nav__item">
-				<img
-					class="nav__item-decorate"
-					src="../../assets/img/navbar/decoration.svg"
-					alt=""
-				/>
-				<img
-					class="nav__item-image"
-					src="../../assets/img/navbar/cart.svg"
-					alt=""
-				/>
-				<img
-					class="nav__item-image-active"
-					src="../../assets/img/navbar/cart-active.svg"
-					alt=""
-				/>
-			</div>
-		</div>
-		<aside-navigation />
-	</nav>
+<template lang="pug">
+	include ../../../../node_modules/bemto.pug/bemto.pug
+	nav
+		.nav-wrapper
+			+b.nav
+				+e.item_active
+					+e.IMG.item-decorator(
+						src="../../assets/img/navbar/decoration.svg"
+						alt="")
+					+e.IMG.item-image(
+						src="../../assets/img/navbar/account.svg"
+						alt="")
+					+e.IMG.item-image-active(
+						src="../../assets/img/navbar/account-active.svg"
+						alt="")
+				+e.item
+					+e.IMG.item-decorator(
+						src="../../assets/img/navbar/decoration.svg"
+						alt="")
+					+e.IMG.item-image(
+						src="../../assets/img/navbar/catalog.svg"
+						alt="")
+					+e.IMG.item-image-active(
+						src="../../assets/img/navbar/catalog-active.svg"
+						alt="")
+				+e.item
+					+e.IMG.item-decorator(
+						src="../../assets/img/navbar/decoration.svg"
+						alt="")
+					+e.IMG.item-image(
+						src="../../assets/img/navbar/cart.svg"
+						alt="")
+					+e.IMG.item-image-active(
+						src="../../assets/img/navbar/cart-active.svg"
+						alt="")
+			aside-navigation
 </template>
 
 <script lang="ts">
@@ -71,7 +50,7 @@ export default class Navigation extends Vue {}
 <style lang="scss">
 $nav_height: 52px;
 
-nav {
+.nav-wrapper {
 	position: fixed;
 	width: 100vw;
 	bottom: 0;
@@ -96,23 +75,23 @@ nav {
 	height: 100%;
 }
 
-.nav__item-decorate {
+.nav__item-decorator {
 	position: absolute;
 	align-self: flex-start;
 	transform: translateY(-100%);
 	display: none;
 }
 
-.nav__item_active .nav__item-decorate {
+.nav__item_active .nav__item-decorator {
 	display: block;
-}
-
-.nav__item_active .nav__item-image {
-	display: none;
 }
 
 .nav__item-image {
 	width: 30px;
+}
+
+.nav__item_active .nav__item-image {
+	display: none;
 }
 
 .nav__item-image-active {

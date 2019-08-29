@@ -1,11 +1,10 @@
-<template>
-	<div class="products">
-		<product />
-		<product />
-		<product />
-		<product />
-		<product />
-	</div>
+<template lang="pug">
+	include ../../../../../node_modules/bemto.pug/bemto.pug
+	+b.products
+		product
+		product
+		product
+		product
 </template>
 
 <script lang="ts">

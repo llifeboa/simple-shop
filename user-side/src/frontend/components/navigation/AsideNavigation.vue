@@ -1,20 +1,14 @@
-<template>
-	<div class="nav-aside">
-		<div class="nav-aside__item">
-			<img
+<template lang="pug">
+	include ../../../../node_modules/bemto.pug/bemto.pug
+	+b.nav-aside
+		+e.item
+			+e.IMG.item-image(
 				src="../../assets/img/navbar/filters.svg"
-				alt=""
-				class="nav-aside__item-image"
-			/>
-		</div>
-		<div class="nav-aside__item">
-			<img
+				alt="")
+		+e.item
+			+e.IMG.item-image(
 				src="../../assets/img/navbar/search.svg"
-				alt=""
-				class="nav-aside__item-image"
-			/>
-		</div>
-	</div>
+				alt="")
 </template>
 
 <script lang="ts">
@@ -28,16 +22,16 @@ export default class AsideNavigation extends Vue {}
 	position: fixed;
 	bottom: 80px;
 	right: 10px;
-}
 
-.nav-aside__item {
-	width: 57px;
-	height: 57px;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 50%;
-	margin-top: 6px;
+	&__item {
+		width: 57px;
+		height: 57px;
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		margin-top: 6px;
+	}
 }
 </style>

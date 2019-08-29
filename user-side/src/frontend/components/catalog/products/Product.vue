@@ -1,26 +1,18 @@
-<template>
-	<div class="product">
-		<div class="product__wrapper">
-			<picture>
-				<img
+<template lang="pug">
+	include ../../../../../node_modules/bemto.pug/bemto.pug
+	+b.product
+		+e.wrapper
+			picture
+				+e.IMG.wrapper-image(
 					src="../../../assets/img/product/image.jpg"
-					alt=""
-					class="product__wrapper-image"
-				/>
-			</picture>
-		</div>
-		<div class="product__info">
-			<div class="product__info-wrapper">
-				<span class="product__info-name">yeezy boots</span>
-				<span class="product__info-price">4200$</span>
-			</div>
-			<img
+					alt="")
+		+e.info
+			+e.info-wrapper
+				+e.SPAN.info-name yeezy boots
+				+e.SPAN.info-price 4200$
+			+e.IMG.info-brand(
 				src="../../../assets/img/product/adidas.svg"
-				alt=""
-				class="product__info-brand"
-			/>
-		</div>
-	</div>
+				alt="")
 </template>
 
 <script lang="ts">

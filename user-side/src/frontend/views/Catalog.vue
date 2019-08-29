@@ -1,9 +1,9 @@
-<template>
-	<div class="catalog">
-		<banner />
-		<page-navigation />
-		<products />
-	</div>
+<template lang="pug">
+	include ../../../node_modules/bemto.pug/bemto.pug
+	+b.catalog
+		banner
+		page-navigation
+		products
 </template>
 
 <script lang="ts">

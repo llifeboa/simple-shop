@@ -1,20 +1,15 @@
-<template>
-	<div class="page-nav">
-		<div class="page-nav__page-select-wrapper">
-			<span class="page-nav__page-select-value">{{
-				this.selectValue
-			}}</span>
-			<select v-model="this.selectValue" class="page-nav__page-select">
-				<option selected value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-			</select>
-		</div>
-		<div class="page-nav__arrow">
-			<button class="page-nav__arrow-prev"></button>
-			<button class="page-nav__arrow-next"></button>
-		</div>
-	</div>
+<template lang="pug">
+	include ../../../../../node_modules/bemto.pug/bemto.pug
+	+b.page-nav
+		+e.page-select-wrapper
+			+e.SPAN.page-select-value {{selectValue}}
+			+e.SELECT.page-select(v-model="selectValue")
+				option(value="1") 1
+				option(value="2") 2
+				option(value="3") 3
+		+e.arrow
+			+e.BUTTON.arrow-prev
+			+e.BUTTON.arrow-next
 </template>
 
 <script lang="ts">

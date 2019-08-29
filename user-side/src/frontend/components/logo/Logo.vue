@@ -1,11 +1,9 @@
-<template>
-	<div class="logo">
-		<img
+<template lang="pug">
+	include ../../../../node_modules/bemto.pug/bemto.pug
+	+b.logo
+		+e.image(
 			src="../../assets/img/logo/logo.svg"
-			alt="logo"
-			class="logo__image"
-		/>
-	</div>
+			alt="logo")
 </template>
 
 <script lang="ts">

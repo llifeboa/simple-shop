@@ -1,23 +1,15 @@
-<template>
-	<div class="banner-wrapper">
-		<div class="banner">
-			<img
-				class="banner__image"
-				src="../../../assets/img/catalog/banners/hand_hold_boot.jpg"
-				alt="hand hold a boot"
-			/>
-			<div class="banner__text">
-				<p class="banner__text-main">
-					Придай <b>характер</b> <br />
-					своему <b>образу</b>
-					<span class="banner__text-sub">
-						yeezy
-					</span>
-				</p>
-			</div>
-			<button class="banner__btn-buy">купить</button>
-		</div>
-	</div>
+<template lang="pug">
+	include ../../../../../node_modules/bemto.pug/bemto.pug
+	+b.banner-wrapper
+		+b.banner
+			+e.IMG.image(src="../../../assets/img/catalog/banners/hand_hold_boot.jpg" alt="hand hold a boot")
+			+e.text
+				+e.P.text-main
+					|Придай <b>характер</b><br>
+					|своему <b>образу</b>
+				+e.SPAN.text-sub
+					|yeezy
+			+e.BUTTON.btn-buy купить
 </template>
 
 <script lang="ts">
@@ -42,20 +34,20 @@ export default class Banner extends Vue {}
 
 .banner__text {
 	position: relative;
-}
 
-.banner__text-main {
-	font-size: 28px;
-	line-height: 34px;
-}
+	&-main {
+		font-size: 28px;
+		line-height: 34px;
+	}
 
-.banner__text-sub {
-	display: block;
-	text-transform: uppercase;
-	font-weight: 900;
-	font-size: 50px;
-	line-height: 61px;
-	color: #F2F2F2;
+	&-sub {
+		display: block;
+		text-transform: uppercase;
+		font-weight: 900;
+		font-size: 50px;
+		line-height: 61px;
+		color: #F2F2F2;
+	}
 }
 
 .banner__image {
