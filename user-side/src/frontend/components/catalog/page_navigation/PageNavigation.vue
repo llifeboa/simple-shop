@@ -58,7 +58,7 @@ export default class PageNavigation extends Vue {
 		height: 30px;
 		border: none;
 		appearance: none;
-		background: linear-gradient(339.49deg, #F1915B 15.6%, #F54278 84.6%);
+		background: linear-gradient(339.49deg, #f1915b 15.6%, #f54278 84.6%);
 		border-radius: 5px;
 		color: transparent;
 		text-align-last: center;

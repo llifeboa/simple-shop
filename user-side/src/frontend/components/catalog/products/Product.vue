@@ -36,7 +36,6 @@ export default class Product extends Vue {}
 	}
 
 	.product__wrapper {
-
 		&-image {
 			object-fit: cover;
 			width: 100%;
