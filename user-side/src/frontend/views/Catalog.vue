@@ -9,7 +9,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Banner from '../components/catalog/banners/Banner.vue';
-import PageNavigation from '../components/catalog/page_navigation/PageNavigation.vue';
+import PageNavigation from '../components/catalog/page-navigation/PageNavigation.vue';
 import Products from '../components/catalog/products/Products.vue';
 @Component({
 	components: {
