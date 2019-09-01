@@ -2,7 +2,7 @@
 	include ../../../../../node_modules/bemto.pug/bemto.pug
 	+b.banner-wrapper
 		+b.banner
-			+e.IMG.image(src="../../../assets/img/catalog/banners/hand_hold_boot.jpg" alt="hand hold a boot")
+			+e.IMG.image(src="../../../assets/img/catalog/banners/hand-hold-boot.jpg" alt="hand hold a boot")
 			+e.text
 				+e.P.text-main
 					|Придай <b>характер</b><br>
