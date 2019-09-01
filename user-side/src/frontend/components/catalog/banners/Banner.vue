@@ -1,7 +1,7 @@
 <template lang="pug">
 	include ../../../../../node_modules/bemto.pug/bemto.pug
-	+b.banner-wrapper
-		+b.banner
+	+b.banner
+		+e.wrapper
 			+e.IMG.image(src="../../../assets/img/catalog/banners/hand-hold-boot.jpg" alt="hand hold a boot")
 			+e.text
 				+e.P.text-main
@@ -19,17 +19,22 @@ export default class Banner extends Vue {}
 </script>
 
 <style lang="scss">
-.banner-wrapper {
+.banner {
 	padding-bottom: 55px;
 	background-color: white;
+	&__wrapper {
+		text-align: left;
+		height: 290px;
+		padding-top: 12px;
+		padding-left: 32px;
+		position: relative;
+	}
 }
 
-.banner {
-	text-align: left;
-	height: 290px;
-	padding-top: 12px;
-	padding-left: 32px;
-	position: relative;
+.banner__image {
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 .banner__text {
@@ -48,12 +53,6 @@ export default class Banner extends Vue {}
 		line-height: 61px;
 		color: #f2f2f2;
 	}
-}
-
-.banner__image {
-	position: absolute;
-	bottom: 0;
-	right: 0;
 }
 
 .banner__btn-buy {
