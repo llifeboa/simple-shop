@@ -72,7 +72,7 @@ export default class PageNavigation extends Vue {
 		right: 8px;
 		bottom: 8px;
 		transform: rotate(180deg);
-		background-image: url('../../../assets/img/catalog/page_navigation/triangle.svg');
+		background-image: url('../../../assets/img/catalog/page-navigation/triangle.svg');
 		background-repeat: no-repeat;
 	}
 
@@ -83,7 +83,7 @@ export default class PageNavigation extends Vue {
 		position: absolute;
 		right: 8px;
 		top: 8px;
-		background-image: url('../../../assets/img/catalog/page_navigation/triangle.svg');
+		background-image: url('../../../assets/img/catalog/page-navigation/triangle.svg');
 		background-repeat: no-repeat;
 	}
 }
@@ -97,7 +97,7 @@ export default class PageNavigation extends Vue {
 		height: 100%;
 		width: 55px;
 		appearance: none;
-		background-image: url('../../../assets/img/catalog/page_navigation/page-next.svg');
+		background-image: url('../../../assets/img/catalog/page-navigation/page-next.svg');
 		background-color: rgba(0, 0, 0, 0);
 		border: none;
 	}
