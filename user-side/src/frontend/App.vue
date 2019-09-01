@@ -30,22 +30,5 @@ export default {
 </script>
 
 <style lang="scss">
-$fontsURL: './assets/fonts/' !default;
-@import './fonts/montserrat/montserrat.scss';
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
-.app__wrapper {
-	background-image: url('./assets/img/background.svg');
-	background-repeat: repeat-y;
-	background-size: 100%;
-	font-family: 'Montserrat', sans-serif;
-}
-
-.app__footer {
-	height: 65px;
-}
+@import './index.scss';
 </style>
