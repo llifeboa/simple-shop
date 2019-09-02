@@ -1,27 +1,27 @@
 <template lang="pug">
 	include ../../../../../node_modules/bemto.pug/bemto.pug
-	+b.products
-		product
-		product
-		product
-		product
+	+b.items
+		item
+		item
+		item
+		item
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import Product from './Product.vue';
+import item from './Item.vue';
 @Component({
 	components: {
-		Product,
+		item,
 	},
 })
-export default class Products extends Vue {}
+export default class Items extends Vue {}
 </script>
 
 <style lang="scss">
 $space: 11px;
 
-.products {
+.items {
 	padding-top: 8px;
 	display: grid;
 	width: 100%;

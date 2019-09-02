@@ -1,28 +1,28 @@
 <template lang="pug">
 	include ../../../../../node_modules/bemto.pug/bemto.pug
-	+b.product
+	+b.item
 		+e.wrapper
 			picture
 				+e.IMG.wrapper-image(
-					src="../../../assets/img/product/image.jpg"
+					src="../../../assets/img/item/image.jpg"
 					alt="")
 		+e.info
 			+e.info-wrapper
 				+e.SPAN.info-name yeezy boots
 				+e.SPAN.info-price 4200$
 			+e.IMG.info-brand(
-				src="../../../assets/img/product/adidas.svg"
+				src="../../../assets/img/item/adidas.svg"
 				alt="")
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 @Component
-export default class Product extends Vue {}
+export default class Item extends Vue {}
 </script>
 
 <style lang="scss">
-.product {
+.item {
 	border-radius: 10px;
 	background-color: white;
 	color: black;
@@ -35,7 +35,7 @@ export default class Product extends Vue {}
 		padding-top: 130%;
 	}
 
-	.product__wrapper {
+	.item__wrapper {
 		&-image {
 			object-fit: cover;
 			width: 100%;
@@ -45,7 +45,7 @@ export default class Product extends Vue {}
 		}
 	}
 
-	.product__info {
+	.item__info {
 		position: absolute;
 		bottom: 0;
 		display: flex;
