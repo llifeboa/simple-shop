@@ -61,7 +61,7 @@
     "pm2": "^3.5.1",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.18.2",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.2.0",
     "style-loader": "^1.0.0",
